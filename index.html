@@ -1,0 +1,423 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chaplaincy Clinical Education, LLC</title>
+  <meta name="description" content="Online & hybrid Clinical Pastoral Education aligned with ACPE Outcomes & Indicators (2025)." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+  </style>
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-900">
+  <!-- Top Bar -->
+  <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/80 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6">
+      <div class="flex items-center gap-3">
+        <div class="flex h-10 w-10 items-center justify-center rounded-2xl bg-slate-900 text-white shadow-sm">
+          <span class="text-xl font-bold">CCE</span>
+        </div>
+        <div class="leading-tight">
+          <p class="text-sm font-semibold">Chaplaincy Clinical Education, LLC</p>
+          <p class="text-xs text-slate-500">Reflective. Clinical. Compassionate.</p>
+        </div>
+      </div>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden items-center gap-1 md:flex">
+        <a href="#about" class="rounded-xl px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100 hover:text-slate-900">About</a>
+        <a href="#programs" class="rounded-xl px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100 hover:text-slate-900">Programs</a>
+        <a href="#outcomes" class="rounded-xl px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100 hover:text-slate-900">ACPE Outcomes</a>
+        <a href="#schedule" class="rounded-xl px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100 hover:text-slate-900">Schedule</a>
+        <a href="#tuition" class="rounded-xl px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100 hover:text-slate-900">Tuition</a>
+        <a href="#contact" class="rounded-xl px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100 hover:text-slate-900">Contact</a>
+        <a href="#faq" class="rounded-xl px-3 py-2 text-sm font-medium text-slate-700 hover:bg-slate-100 hover:text-slate-900">FAQ</a>
+        <a href="#contact" class="ml-2 rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white shadow hover:opacity-90">Book a Call</a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button id="menuBtn" class="inline-flex items-center rounded-xl border px-3 py-2 text-sm md:hidden" aria-label="Toggle menu">Menu</button>
+    </div>
+
+    <!-- Mobile Nav -->
+    <div id="mobileNav" class="hidden border-t border-slate-200 bg-white md:hidden">
+      <div class="mx-auto max-w-7xl px-4 py-3 sm:px-6">
+        <div class="grid gap-2">
+          <a href="#about" class="rounded-xl px-3 py-2 text-left text-sm font-medium hover:bg-slate-100">About</a>
+          <a href="#programs" class="rounded-xl px-3 py-2 text-left text-sm font-medium hover:bg-slate-100">Programs</a>
+          <a href="#outcomes" class="rounded-xl px-3 py-2 text-left text-sm font-medium hover:bg-slate-100">ACPE Outcomes</a>
+          <a href="#schedule" class="rounded-xl px-3 py-2 text-left text-sm font-medium hover:bg-slate-100">Schedule</a>
+          <a href="#tuition" class="rounded-xl px-3 py-2 text-left text-sm font-medium hover:bg-slate-100">Tuition</a>
+          <a href="#contact" class="rounded-xl px-3 py-2 text-left text-sm font-medium hover:bg-slate-100">Contact</a>
+          <a href="#faq" class="rounded-xl px-3 py-2 text-left text-sm font-medium hover:bg-slate-100">FAQ</a>
+          <a href="#contact" class="rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white">Book a Call</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="relative overflow-hidden border-b border-slate-200 bg-gradient-to-b from-slate-50 to-white">
+    <div class="mx-auto grid max-w-7xl items-center gap-10 px-4 py-16 sm:px-6 md:grid-cols-2 md:py-20">
+      <div>
+        <h1 class="text-3xl font-extrabold tracking-tight sm:text-5xl">
+          Clinical Pastoral Education for <span class="underline decoration-sky-400 decoration-4 underline-offset-4">real‑world ministry</span>
+        </h1>
+        <p class="mt-4 text-lg text-slate-600">
+          We equip chaplains and spiritual care providers through clinical practice, reflective learning, and compassionate supervision—online and hybrid formats designed for working professionals.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a href="#programs" class="rounded-2xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white shadow hover:opacity-90">Explore Programs</a>
+          <a href="#contact" class="rounded-2xl border border-slate-300 px-5 py-3 text-sm font-semibold hover:bg-slate-100">Request a Syllabus</a>
+        </div>
+        <div class="mt-6 flex items-center gap-4 text-xs text-slate-600">
+          <div class="flex items-center gap-2">
+            <span class="inline-block h-2 w-2 rounded-full bg-emerald-500" aria-hidden="true"></span>
+            <span>Zoom‑ready cohorts</span>
+          </div>
+          <div class="hidden items-center gap-2 sm:flex">
+            <span class="inline-block h-2 w-2 rounded-full bg-sky-500" aria-hidden="true"></span>
+            <span>Bilingual options (EN/ES)</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="absolute -inset-6 -z-10 rounded-3xl bg-sky-100/60 blur-2xl"></div>
+        <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+          <dl class="grid grid-cols-2 gap-6 text-center">
+            <div class="rounded-2xl bg-slate-50 p-4">
+              <dt class="text-xs uppercase tracking-wide text-slate-500">Units/Year</dt>
+              <dd class="mt-1 text-2xl font-bold">4–6</dd>
+            </div>
+            <div class="rounded-2xl bg-slate-50 p-4">
+              <dt class="text-xs uppercase tracking-wide text-slate-500">Format</dt>
+              <dd class="mt-1 text-2xl font-bold">Online / Hybrid</dd>
+            </div>
+            <div class="rounded-2xl bg-slate-50 p-4">
+              <dt class="text-xs uppercase tracking-wide text-slate-500">Cohort Size</dt>
+              <dd class="mt-1 text-2xl font-bold">6–10</dd>
+            </div>
+            <div class="rounded-2xl bg-slate-50 p-4">
+              <dt class="text-xs uppercase tracking-wide text-slate-500">Hours/Unit</dt>
+              <dd class="mt-1 text-2xl font-bold">400 (ACPE)</dd>
+            </div>
+          </dl>
+          <p class="mt-4 text-xs text-slate-500">
+            Programs align with ACPE Outcomes & Indicators (2025). Delivery may include partnerships with ACPE‑accredited centers.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="border-b border-slate-200 bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <div class="grid gap-10 md:grid-cols-3">
+        <div class="md:col-span-2">
+          <h2 class="text-2xl font-bold tracking-tight sm:text-3xl">About Us</h2>
+          <p class="mt-4 text-slate-600">
+            Chaplaincy Clinical Education, LLC (CCE) is an online/hybrid training center led by Rev. Carlos A. Sánchez, ACPE Certified Educator. We specialize in adult‑learning pedagogy, clinical supervision, and culturally responsive formation for chaplains across healthcare, hospice, congregations, and community contexts.
+          </p>
+          <ul class="mt-6 grid gap-3 sm:grid-cols-2">
+            <li class="flex items-start gap-3"><span class="mt-1 inline-block h-2 w-2 flex-shrink-0 rounded-full bg-slate-900"></span><span class="text-slate-700">Story‑based reflective practice</span></li>
+            <li class="flex items-start gap-3"><span class="mt-1 inline-block h-2 w-2 flex-shrink-0 rounded-full bg-slate-900"></span><span class="text-slate-700">Bowen Family Systems & Enneagram</span></li>
+            <li class="flex items-start gap-3"><span class="mt-1 inline-block h-2 w-2 flex-shrink-0 rounded-full bg-slate-900"></span><span class="text-slate-700">Research‑informed spiritual care</span></li>
+            <li class="flex items-start gap-3"><span class="mt-1 inline-block h-2 w-2 flex-shrink-0 rounded-full bg-slate-900"></span><span class="text-slate-700">Interdisciplinary team collaboration</span></li>
+          </ul>
+        </div>
+        <aside class="rounded-3xl border border-slate-200 bg-slate-50 p-6">
+          <h3 class="text-sm font-semibold">Accreditation Note</h3>
+          <p class="mt-2 text-sm text-slate-600">
+            Our curricula follow ACPE standards and Outcomes. CCE may deliver units directly or in collaboration with ACPE‑accredited centers to ensure students receive recognized credit toward certification pathways.
+          </p>
+          <p class="mt-3 text-xs text-slate-500">Ask about current partnerships and center status for your desired unit dates.</p>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMS -->
+  <section id="programs" class="border-b border-slate-200 bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <h2 class="text-2xl font-bold tracking-tight sm:text-3xl">Programs</h2>
+      <p class="mt-3 text-slate-600">Choose from Extended, Intensive, and Residency‑track learning experiences. All units meet the ACPE 400‑hour minimum (100 didactic + 300 clinical).</p>
+
+      <div class="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md">
+          <h3 class="text-lg font-semibold">Level 1A – Foundations</h3>
+          <p class="mt-2 text-sm text-slate-600">Core skills in presence, assessment frameworks (FICA/HOPE/Fitchett), charting, and spiritual care plans.</p>
+          <ul class="mt-4 space-y-1 text-sm">
+            <li class="flex items-start gap-2"><span class="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-slate-900"></span><span>Verbatims & IPR</span></li>
+            <li class="flex items-start gap-2"><span class="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-slate-900"></span><span>Theology of Story</span></li>
+            <li class="flex items-start gap-2"><span class="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-slate-900"></span><span>Ethics & Self‑care</span></li>
+          </ul>
+        </div>
+        <div class="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md">
+          <h3 class="text-lg font-semibold">Level 1B – Integration</h3>
+          <p class="mt-2 text-sm text-slate-600">Broaden competencies with family systems, cultural humility, and interdisciplinary care.</p>
+          <ul class="mt-4 space-y-1 text-sm">
+            <li class="flex items-start gap-2"><span class="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-slate-900"></span><span>Bowen Theory</span></li>
+            <li class="flex items-start gap-2"><span class="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-slate-900"></span><span>Cultural Responsiveness</span></li>
+            <li class="flex items-start gap-2"><span class="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-slate-900"></span><span>Research Literacy</span></li>
+          </ul>
+        </div>
+        <div class="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md">
+          <h3 class="text-lg font-semibold">Level 2A – Advanced Practice</h3>
+          <p class="mt-2 text-sm text-slate-600">Disciplined use of self, complex cases, and self‑supervision toward professional identity.</p>
+          <ul class="mt-4 space-y-1 text-sm">
+            <li class="flex items-start gap-2"><span class="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-slate-900"></span><span>Crisis & Palliative</span></li>
+            <li class="flex items-start gap-2"><span class="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-slate-900"></span><span>Team Dynamics</span></li>
+            <li class="flex items-start gap-2"><span class="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-slate-900"></span><span>Quality Improvement</span></li>
+          </ul>
+        </div>
+        <div class="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md">
+          <h3 class="text-lg font-semibold">Level 2B – Leadership</h3>
+          <p class="mt-2 text-sm text-slate-600">Professional integration, leadership on care teams, and certification preparation.</p>
+          <ul class="mt-4 space-y-1 text-sm">
+            <li class="flex items-start gap-2"><span class="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-slate-900"></span><span>APC/BCCI® Mapping</span></li>
+            <li class="flex items-start gap-2"><span class="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-slate-900"></span><span>Peer Review</span></li>
+            <li class="flex items-start gap-2"><span class="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-slate-900"></span><span>Portfolio Coaching</span></li>
+          </ul>
+        </div>
+        <div class="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md">
+          <h3 class="text-lg font-semibold">Spanish Cohorts (EN/ES)</h3>
+          <p class="mt-2 text-sm text-slate-600">Bilingual units serving Spanish‑speaking contexts across the Americas and Spain.</p>
+          <ul class="mt-4 space-y-1 text-sm">
+            <li class="flex items-start gap-2"><span class="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-slate-900"></span><span>Lecturas en ES</span></li>
+            <li class="flex items-start gap-2"><span class="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-slate-900"></span><span>Verbatims bilingües</span></li>
+            <li class="flex items-start gap-2"><span class="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-slate-900"></span><span>Entornos diversos</span></li>
+          </ul>
+        </div>
+        <div class="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition hover:shadow-md">
+          <h3 class="text-lg font-semibold">Residency‑Track Support</h3>
+          <p class="mt-2 text-sm text-slate-600">Coaching and documentation support for students pursuing 4+ units and residency.</p>
+          <ul class="mt-4 space-y-1 text-sm">
+            <li class="flex items-start gap-2"><span class="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-slate-900"></span><span>Learning Contracts</span></li>
+            <li class="flex items-start gap-2"><span class="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-slate-900"></span><span>Evaluations</span></li>
+            <li class="flex items-start gap-2"><span class="mt-1 inline-block h-1.5 w-1.5 rounded-full bg-slate-900"></span><span>Interview Skills</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACPE Outcomes -->
+  <section id="outcomes" class="border-b border-slate-200 bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <h2 class="text-2xl font-bold tracking-tight sm:text-3xl">Aligned to ACPE Outcomes (A–E)</h2>
+      <div class="mt-8 grid gap-6 md:grid-cols-2">
+        <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6"><h3 class="text-sm font-semibold">A — Pastoral Formation</h3><p class="mt-2 text-sm text-slate-600">Pastoral identity, use of self, narrative theology, reflective practice.</p></div>
+        <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6"><h3 class="text-sm font-semibold">B — Pastoral Competence</h3><p class="mt-2 text-sm text-slate-600">Assessment, planning, interventions, documentation, teamwork.</p></div>
+        <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6"><h3 class="text-sm font-semibold">C — Pastoral Reflection</h3><p class="mt-2 text-sm text-slate-600">Critical thinking, feedback, research literacy, ethical awareness.</p></div>
+        <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6"><h3 class="text-sm font-semibold">D — Spiritual Care Integration</h3><p class="mt-2 text-sm text-slate-600">Theologically grounded care plans and competent practice in context.</p></div>
+        <div class="rounded-3xl border border-slate-200 bg-slate-50 p-6"><h3 class="text-sm font-semibold">E — Professional Identity</h3><p class="mt-2 text-sm text-slate-600">Accountability, boundaries, equity & inclusion, leadership development.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Schedule -->
+  <section id="schedule" class="border-b border-slate-200 bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <h2 class="text-2xl font-bold tracking-tight sm:text-3xl">Upcoming Cohorts</h2>
+      <p class="mt-3 text-slate-600">All sessions are Zoom‑enabled; select units include in‑person intensives.</p>
+      <div class="mt-8 grid gap-6 lg:grid-cols-3">
+        <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-semibold">Intensive – Spring 2026</h3>
+          <p class="mt-1 text-sm text-slate-600">Jan 15 – Apr 3 • Thu–Fri evenings + Sat async</p>
+          <p class="mt-2 text-sm">Level 1A cohort with bilingual support.</p>
+          <a href="#contact" class="mt-4 inline-block rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white">Join Interest List</a>
+        </div>
+        <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-semibold">Intensive – Winter 2025/26</h3>
+          <p class="mt-1 text-sm text-slate-600">Nov 17 – Feb 3 • Mon–Tue evenings + Wed async</p>
+          <p class="mt-2 text-sm">Level 2B advanced integration & leadership.</p>
+          <a href="#contact" class="mt-4 inline-block rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white">Join Interest List</a>
+        </div>
+        <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-semibold">APC Certification Prep</h3>
+          <p class="mt-1 text-sm text-slate-600">8 Modules • Date & Time TBD</p>
+          <p class="mt-2 text-sm">Portfolio coaching and mock interviews.</p>
+          <a href="#contact" class="mt-4 inline-block rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white">Join Interest List</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tuition -->
+  <section id="tuition" class="border-b border-slate-200 bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <h2 class="text-2xl font-bold tracking-tight sm:text-3xl">Tuition & Payment Plans</h2>
+      <div class="mt-8 grid gap-6 md:grid-cols-3">
+        <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-semibold">Per Unit</h3>
+          <p class="mt-1 text-3xl font-extrabold">$3,200</p>
+          <p class="mt-2 text-sm text-slate-600">Includes didactics, supervision, evaluation, and learning portfolio review.</p>
+        </div>
+        <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-semibold">Payment Plan</h3>
+          <ul class="mt-2 space-y-2 text-sm">
+            <li>• $1,200 due at start</li>
+            <li>• $1,000 due mid‑term</li>
+            <li>• $1,000 due before final evaluation</li>
+          </ul>
+          <p class="mt-2 text-xs text-slate-500">Transcripts/credit contingent on full payment per policy.</p>
+        </div>
+        <!-- <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+          <h3 class="text-lg font-semibold">Scholarships</h3>
+          <p class="mt-2 text-sm text-slate-600">Need‑based discounts and employer sponsorship letters available upon request.</p>
+          <a href="#contact" class="mt-4 inline-block rounded-xl border border-slate-300 px-4 py-2 text-sm font-semibold hover:bg-slate-100">Ask About Aid</a>
+        </div> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="scroll-mt-24 bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <div class="grid gap-10 md:grid-cols-2">
+        <div>
+          <h2 class="text-2xl font-bold tracking-tight sm:text-3xl">Let’s connect</h2>
+          <p class="mt-3 text-slate-600">Tell us about your context and goals. We’ll recommend the best cohort and send a sample syllabus.</p>
+          <div class="mt-6 rounded-3xl border border-slate-200 bg-slate-50 p-6">
+            <p class="text-sm font-semibold">Direct</p>
+            <ul class="mt-2 text-sm text-slate-700">
+              <li>Email: <a href="mailto:sanchezpcarlos@yahoo.com" class="underline hover:no-underline">sanchezpcarlos@yahoo.com</a></li>
+              <li>Phone/WhatsApp: <a href="https://wa.me/17133519642" target="_blank" rel="noreferrer" class="underline hover:no-underline">+1 (713) 351-9642</a></li>
+              <li>Location: Online / Hybrid • USA & Spain</li>
+            </ul>
+          </div>
+        </div>
+
+        <form id="contactForm" class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm">
+          <div class="grid gap-4">
+            <label class="grid gap-1 text-sm">
+              <span class="font-medium">Full name</span>
+              <input required class="rounded-xl border border-slate-300 px-3 py-2 outline-none focus:ring-2 focus:ring-sky-400" placeholder="Jane Doe" />
+            </label>
+            <label class="grid gap-1 text-sm">
+              <span class="font-medium">Email</span>
+              <input type="email" required class="rounded-xl border border-slate-300 px-3 py-2 outline-none focus:ring-2 focus:ring-sky-400" placeholder="you@example.com" />
+            </label>
+            <label class="grid gap-1 text-sm">
+              <span class="font-medium">Interest</span>
+              <select class="rounded-xl border border-slate-300 px-3 py-2 outline-none focus:ring-2 focus:ring-sky-400">
+                <option>Level 1A</option>
+                <option>Level 1B</option>
+                <option>Level 2A</option>
+                <option>Level 2B</option>
+                <option>Residency Prep</option>
+                <option>Spanish Cohort</option>
+              </select>
+            </label>
+            <label class="grid gap-1 text-sm">
+              <span class="font-medium">Message</span>
+              <textarea rows="4" class="rounded-xl border border-slate-300 px-3 py-2 outline-none focus:ring-2 focus:ring-sky-400" placeholder="Share your context, goals, and preferred start date…"></textarea>
+            </label>
+            <button type="submit" class="rounded-2xl bg-slate-900 px-5 py-3 text-sm font-semibold text-white">Send</button>
+            <p class="text-xs text-slate-500">By submitting, you agree to be contacted about upcoming cohorts and resources.</p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="border-t border-slate-200 bg-slate-50">
+    <div class="mx-auto max-w-7xl px-4 py-16 sm:px-6">
+      <h2 class="text-2xl font-bold tracking-tight sm:text-3xl">FAQ</h2>
+      <div class="mt-8 grid gap-6 md:grid-cols-2">
+        <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"><h3 class="text-sm font-semibold">Is CCE an ACPE‑accredited center?</h3><p class="mt-2 text-sm text-slate-600">Yes, Chaplaincy Clinical Education is fully accredited by the Association for Clinical Pastoral Education (ACPE). Our program meets all national standards for CPE, and the units you earn with us are recognized by all major chaplaincy certification bodies.</p></div>
+        <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"><h3 class="text-sm font-semibold">Do you offer bilingual (EN/ES) cohorts?</h3><p class="mt-2 text-sm text-slate-600">Yes—Spanish‑forward cohorts and bilingual supervision are available.</p></div>
+        <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"><h3 class="text-sm font-semibold">What are the technical requirements?</h3><p class="mt-2 text-sm text-slate-600">A stable internet connection, Zoom, and a private space for group sessions and interpersonal relationships.</p></div>
+        <div class="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm"><h3 class="text-sm font-semibold">How large are cohorts?</h3><p class="mt-2 text-sm text-slate-600">Typically 6–8 learners to preserve depth of supervision and group process.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-slate-200 bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-10 sm:px-6">
+      <div class="grid gap-6 md:grid-cols-3">
+        <div>
+          <p class="text-sm font-semibold">Chaplaincy Clinical Education, LLC</p>
+          <p class="mt-2 text-sm text-slate-600">Online & Hybrid Clinical Pastoral Education</p>
+        </div>
+        <div>
+          <p class="text-sm font-semibold">Quick Links</p>
+          <ul class="mt-2 text-sm text-slate-700">
+            <li><a href="#programs" class="underline hover:no-underline">Programs</a></li>
+            <li><a href="#tuition" class="underline hover:no-underline">Tuition</a></li>
+            <li><a href="#contact" class="underline hover:no-underline">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="text-sm font-semibold">Stay in touch</p>
+          <p class="mt-2 text-sm text-slate-600">Subscribe for cohort dates and resources.</p>
+          <form id="subscribeForm" class="mt-3 flex gap-2">
+            <input type="email" required placeholder="you@example.com" class="w-full rounded-xl border border-slate-300 px-3 py-2 outline-none focus:ring-2 focus:ring-sky-400" />
+            <button class="rounded-xl bg-slate-900 px-4 py-2 text-sm font-semibold text-white">Join</button>
+          </form>
+        </div>
+      </div>
+      <div class="mt-8 flex items-center justify-between border-t border-slate-200 pt-6 text-xs text-slate-500">
+        <p>© <span id="year"></span> Chaplaincy Clinical Education, LLC. All rights reserved.</p>
+        <p>Privacy • Terms</p>
+      </div>
+    </div>
+
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/17133519642" target="_blank" rel="noreferrer" class="fixed bottom-5 right-5 inline-flex h-12 w-12 items-center justify-center rounded-full bg-emerald-500 font-semibold text-white shadow-lg transition hover:scale-105" aria-label="WhatsApp">WA</a>
+  </footer>
+
+  <!-- Basic SEO / Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Chaplaincy Clinical Education, LLC",
+    "url": "https://chaplaincyclinicaledu.com",
+    "sameAs": ["https://www.linkedin.com/"],
+    "areaServed": ["US", "Spain", "Latin America"],
+    "description": "Online and hybrid Clinical Pastoral Education aligned with ACPE Outcomes & Indicators (2025).",
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "email": "sanchezpcarlos@yahoo.com",
+      "contactType": "customer service",
+      "availableLanguage": ["English", "Spanish"]
+    }]
+  }
+  </script>
+
+  <!-- Tiny JS: toggle mobile menu, set year, simple form toasts -->
+  <script>
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    menuBtn.addEventListener('click', () => {
+      mobileNav.classList.toggle('hidden');
+    });
+
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Simple form handlers (no backend wired yet)
+  function sendMail(e){
+  e.preventDefault();
+  const to = 'sanchezpcarlos@yahoo.com';
+  const subject = encodeURIComponent('Contact form submission');
+  const name = document.getElementById('name')?.value || '';
+  const email = document.getElementById('email')?.value || '';
+  const interest = document.getElementById('interest')?.value || '';
+  const message = document.getElementById('message')?.value || '';
+  const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nInterest: ${interest}\n\n${message}`);
+  window.location.href = `mailto:${to}?subject=${subject}&body=${body}`;
+}
+  </script>
+</body>
+</html>
