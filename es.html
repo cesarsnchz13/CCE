@@ -30,11 +30,10 @@
     <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6">
       <div class="flex items-center gap-3">
         <!-- Placeholder for logo -->
-        <img src="images/cce-logo.png" alt="CCE logo" class="h-20 w-20 object-contain"
+        <img src="images/cce-logo.png" alt="CCE logo" class="h-12 w-12 object-contain"
           onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'text-2xl\'>🕊️</span>'" />
         <div class="leading-tight">
           <p class="text-sm font-bold text-slate-900">Chaplaincy Clinical Education</p>
-          <p class="text-xs font-medium text-indigo-600">Reflexiva. Clínica. Compasiva.</p>
         </div>
       </div>
 
@@ -65,15 +64,23 @@
         </div>
       </nav>
 
-      <!-- Mobile Menu Button (visible on smaller than lg screens now) -->
-      <button id="menuBtn"
-        class="inline-flex items-center justify-center rounded-xl bg-slate-100 p-2 text-slate-600 transition hover:bg-slate-200 lg:hidden"
-        aria-label="Toggle menu">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-          class="h-6 w-6">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
-        </svg>
-      </button>
+      <!-- Mobile Controls (Language + Menu) -->
+      <div class="flex items-center gap-3 lg:hidden">
+        <!-- Visible Language Toggle for Mobile -->
+        <a href="index.html" class="flex items-center gap-1 rounded-full border border-slate-200 bg-white px-3 py-1.5 text-xs font-bold text-slate-700 shadow-sm transition active:scale-95">
+          <span>EN</span>
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button id="menuBtn"
+          class="inline-flex items-center justify-center rounded-xl bg-slate-100 p-2 text-slate-600 transition hover:bg-slate-200"
+          aria-label="Toggle menu">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="h-6 w-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5" />
+          </svg>
+        </button>
+      </div>
     </div>
 
     <!-- Mobile Nav -->
@@ -93,23 +100,49 @@
         <a href="#contact"
           class="mt-2 rounded-xl bg-indigo-600 px-4 py-3 text-center text-sm font-semibold text-white">Agendar
           llamada</a>
+
+        <!-- Mobile Language Switcher -->
+        <div class="mt-4 border-t border-slate-100 pt-4">
+          <div class="flex items-center justify-between px-3">
+            <span class="text-sm font-medium text-slate-500">Idioma</span>
+            <div class="flex items-center gap-1 rounded-lg bg-slate-100 p-1">
+               <a href="index.html" class="rounded-md px-3 py-1 text-sm font-medium text-slate-500 transition hover:text-slate-900">EN</a>
+               <span class="rounded-md bg-white px-3 py-1 text-sm font-bold text-indigo-600 shadow-sm">ES</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </header>
 
   <!-- HERO -->
-  <section class="relative overflow-hidden border-b border-slate-200 bg-slate-50">
-    <!-- Modern background gradients -->
+  <!-- CHANGED: Stronger gradient background (Indigo -> Purple -> Teal) -->
+  <section class="relative overflow-hidden border-b border-indigo-100 bg-gradient-to-br from-indigo-100 via-purple-50 to-teal-100">
+
+    <!-- Modern background gradients - Increased opacity and color strength for boldness -->
     <div class="absolute inset-0 flex justify-center overflow-hidden pointer-events-none">
       <div
-        class="absolute -top-40 -right-40 h-[500px] w-[500px] rounded-full bg-indigo-50 blur-3xl opacity-60 mix-blend-multiply">
+        class="absolute -top-40 -right-40 h-[600px] w-[600px] rounded-full bg-indigo-400 blur-3xl opacity-20 mix-blend-multiply animate-pulse">
       </div>
       <div
-        class="absolute top-20 -left-40 h-[500px] w-[500px] rounded-full bg-teal-50 blur-3xl opacity-60 mix-blend-multiply">
+        class="absolute top-20 -left-40 h-[600px] w-[600px] rounded-full bg-teal-400 blur-3xl opacity-20 mix-blend-multiply">
       </div>
+      <div class="absolute bottom-0 right-1/2 h-[500px] w-[500px] rounded-full bg-purple-300 blur-3xl opacity-20 mix-blend-multiply"></div>
     </div>
 
-    <div class="relative mx-auto grid max-w-7xl items-center gap-12 px-4 py-16 sm:px-6 md:grid-cols-2 md:py-24">
+    <!-- Changed Layout: Removed grid, centered content, added logo section -->
+    <div class="relative mx-auto max-w-5xl px-4 py-16 text-center sm:px-6 md:py-24">
+
+      <!-- NEW: Large Logo & Name Section -->
+      <div class="mb-10 flex flex-col items-center justify-center gap-4 animate-fade-in-up">
+         <img src="images/cce-logo.png" alt="CCE logo" class="h-32 w-32 object-contain drop-shadow-sm transition hover:scale-105" onerror="this.style.display='none';this.parentElement.innerHTML='<span class=\'text-6xl\'>🕊️</span>'" />
+         <div>
+             <h2 class="text-3xl font-extrabold text-slate-900 sm:text-4xl">Chaplaincy Clinical Education</h2>
+             <p class="mt-2 text-xl font-medium text-indigo-600">Reflexiva. Clínica. Compasiva.</p>
+         </div>
+      </div>
+
+      <!-- Main Hero Text -->
       <div>
         <h1 class="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
           Educación Clínica Pastoral para el <span class="relative inline-block text-indigo-700">
@@ -122,11 +155,16 @@
             <span class="relative">ministerio del mundo real</span>
           </span>
         </h1>
-        <p class="mt-6 text-lg leading-relaxed text-slate-600">
+        <p class="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-slate-600">
           Formamos capellanes y profesionales del cuidado espiritual mediante la práctica clínica, el aprendizaje
           reflexivo y la supervisión compasiva—en formatos en línea e híbridos para profesionales en activo.
         </p>
-        <div class="mt-8 flex flex-wrap gap-4">
+
+        <div class="mt-8 flex flex-wrap justify-center gap-4">
+          <!-- NEW BUTTON -->
+          <a href="#schedule"
+            class="rounded-full bg-teal-600 px-6 py-3 text-sm font-semibold text-white shadow-sm shadow-teal-200 transition hover:-translate-y-0.5 hover:bg-teal-700 hover:shadow-md">Ver Próximas Cohortes</a>
+
           <a href="#programs"
             class="rounded-full bg-indigo-600 px-6 py-3 text-sm font-semibold text-white shadow-sm shadow-indigo-200 transition hover:-translate-y-0.5 hover:bg-indigo-700 hover:shadow-md">Explorar
             programas</a>
@@ -134,50 +172,7 @@
             class="rounded-full border-2 border-slate-200 bg-white px-6 py-3 text-sm font-semibold text-slate-700 transition hover:-translate-y-0.5 hover:border-indigo-200 hover:bg-indigo-50 hover:text-indigo-700">Solicitar
             sílabo</a>
         </div>
-        <!-- Feature Pills -->
-        <div class="mt-8 flex flex-wrap items-center gap-4 text-sm font-medium text-slate-700">
-          <div class="flex items-center gap-2 rounded-full bg-teal-50 px-3 py-1.5 text-teal-800 ring-1 ring-teal-100">
-            <span class="flex h-2 w-2">
-              <span class="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-teal-400 opacity-75"></span>
-              <span class="relative inline-flex rounded-full h-2 w-2 bg-teal-500"></span>
-            </span>
-            <span>Cohortes listas para Zoom</span>
-          </div>
-          <div
-            class="flex items-center gap-2 rounded-full bg-indigo-50 px-3 py-1.5 text-indigo-800 ring-1 ring-indigo-100">
-            <span class="inline-block h-2 w-2 rounded-full bg-indigo-500"></span>
-            <span>Opciones bilingües (EN/ES)</span>
-          </div>
-        </div>
-      </div>
 
-      <!-- Hero Stats Card -->
-      <div class="relative">
-        <div class="rounded-3xl border border-slate-100 bg-white/50 p-2 shadow-xl shadow-slate-200/40 backdrop-blur-sm">
-          <div class="rounded-2xl border border-slate-100 bg-white p-6">
-            <dl class="grid grid-cols-2 gap-6 text-center">
-              <div class="rounded-2xl bg-slate-50 p-5 transition hover:bg-indigo-50 hover:scale-[1.02]">
-                <dt class="text-xs font-bold uppercase tracking-wider text-slate-400">Unidades/Año</dt>
-                <dd class="mt-1 text-3xl font-extrabold text-indigo-900">4–6</dd>
-              </div>
-              <div class="rounded-2xl bg-slate-50 p-5 transition hover:bg-indigo-50 hover:scale-[1.02]">
-                <dt class="text-xs font-bold uppercase tracking-wider text-slate-400">Formato</dt>
-                <dd class="mt-1 text-xl font-extrabold text-indigo-900">Online / Híbrido</dd>
-              </div>
-              <div class="rounded-2xl bg-slate-50 p-5 transition hover:bg-indigo-50 hover:scale-[1.02]">
-                <dt class="text-xs font-bold uppercase tracking-wider text-slate-400">Tamaño Grupo</dt>
-                <dd class="mt-1 text-3xl font-extrabold text-indigo-900">6–10</dd>
-              </div>
-              <div class="rounded-2xl bg-slate-50 p-5 transition hover:bg-indigo-50 hover:scale-[1.02]">
-                <dt class="text-xs font-bold uppercase tracking-wider text-slate-400">Horas/Unidad</dt>
-                <dd class="mt-1 text-3xl font-extrabold text-indigo-900">400</dd>
-              </div>
-            </dl>
-            <p class="mt-6 border-t border-slate-100 pt-4 text-center text-xs font-medium text-slate-500">
-              Alineado con los Resultados e Indicadores de ACPE (2025).
-            </p>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -185,9 +180,12 @@
   <!-- ABOUT -->
   <section id="about" class="border-b border-slate-200 bg-white py-24">
     <div class="mx-auto max-w-7xl px-4 sm:px-6">
-      <div class="grid gap-12 lg:grid-cols-3">
-        <!-- Main About Content -->
-        <div class="lg:col-span-2">
+
+      <!-- Changed to Grid Layout: Text Left, Image Right -->
+      <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
+
+        <!-- Left Column: Text & List -->
+        <div>
           <span class="text-sm font-bold uppercase tracking-wider text-indigo-600">Nuestro Enfoque</span>
           <h2 class="mt-2 text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Arraigados en la práctica
             reflexiva</h2>
@@ -245,25 +243,15 @@
           </ul>
         </div>
 
-        <!-- Accreditation Note Sidebar -->
-        <aside class="h-fit rounded-3xl border border-indigo-100 bg-indigo-50/50 p-6 lg:mt-8">
-          <h3 class="flex items-center gap-2 text-sm font-bold text-indigo-900">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
-              class="h-5 w-5 text-indigo-600">
-              <path fill-rule="evenodd"
-                d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a.75.75 0 000 1.5h.253a.25.25 0 01.244.304l-.459 2.066A1.75 1.75 0 0010.747 15H11a.75.75 0 000-1.5h-.253a.25.25 0 01-.244-.304l.459-2.066A1.75 1.75 0 009.253 9H9z"
-                clip-rule="evenodd" />
-            </svg>
-            Nota de Acreditación
-          </h3>
-          <p class="mt-3 text-sm leading-relaxed text-indigo-900/80">
-            Nuestros programas siguen los estándares de ACPE. CCE puede ofrecer unidades directamente o en colaboración
-            con centros acreditados para asegurar créditos reconocidos.
-          </p>
-          <a href="#contact" class="mt-4 inline-block text-xs font-semibold text-indigo-700 hover:underline">
-            Consultar asociaciones actuales &rarr;
-          </a>
-        </aside>
+        <!-- Right Column: Image (Moved here) -->
+        <div class="relative lg:h-full">
+            <!-- We use scale-110 and overflow-hidden to crop out the watermark at the edges -->
+            <div class="h-full overflow-hidden rounded-3xl border-4 border-slate-100 shadow-lg">
+            <img src="/images/about.png" alt="Manos escribiendo en un diario con café cerca"
+                    class="h-64 w-full object-cover transition duration-700 hover:scale-105 md:h-80 lg:h-full scale-110">
+            </div>
+        </div>
+
       </div>
 
       <!-- Educator Bio -->
@@ -453,39 +441,49 @@
     <!-- Schedule -->
     <section id="schedule" class="border-b border-slate-200 bg-slate-900 py-24 text-white lg:border-b-0 lg:border-r">
       <div class="mx-auto max-w-xl px-6 lg:mx-0 lg:max-w-none lg:px-12 xl:px-24">
+
         <span class="text-sm font-bold uppercase tracking-wider text-indigo-400">Inscripción</span>
         <h2 class="mt-2 text-3xl font-bold tracking-tight">Próximas Cohortes</h2>
         <p class="mt-4 text-slate-400">Limitado a 6–8 estudiantes por unidad para asegurar profundidad.</p>
 
         <div class="mt-10 space-y-6">
-          <!-- Cohort Item -->
-          <div class="relative rounded-2xl border border-slate-800 bg-slate-800/50 p-6 transition hover:bg-slate-800">
-            <div class="flex flex-wrap items-center justify-between gap-4">
-              <div>
-                <h3 class="text-lg font-semibold text-white">Intensivo Primavera 2026</h3>
-                <p class="text-sm text-indigo-300">15 Ene – 3 Abr • Jue/Vie tarde</p>
-                <p class="mt-2 text-sm text-slate-400">Cohorte Nivel 1A con soporte bilingüe.</p>
-              </div>
-              <a href="#contact"
-                class="shrink-0 rounded-full bg-white px-4 py-2 text-sm font-semibold text-slate-900 transition hover:bg-indigo-100">
-                Unirse
-              </a>
+            <!-- Verano 2026 Main Block -->
+            <div class="relative rounded-2xl border border-slate-800 bg-slate-800/50 p-6 transition hover:bg-slate-800">
+                <div class="mb-4">
+                    <span class="inline-flex animate-pulse items-center rounded-full bg-rose-600 px-3 py-1 text-xs font-bold uppercase tracking-wide text-white shadow-lg shadow-rose-900/20">
+                        ¡Inscripciones Abiertas!
+                    </span>
+                </div>
+                <h3 class="text-2xl font-bold text-white">CPE de Verano 2026</h3>
+                <p class="text-lg text-indigo-400">Unidades Intensivas en Línea (Dos Opciones)</p>
+                <p class="mt-2 text-sm text-slate-400">Sesiones en vivo por Zoom + aprendizaje asincrónico estructurado.</p>
+
+                <div class="mt-6 space-y-6">
+                    <!-- Opción A -->
+                    <div class="rounded-xl bg-slate-900/50 p-4 border border-slate-700/50">
+                        <h4 class="text-lg font-bold text-teal-400">Opción A — Verano Temprano (Unidad 1)</h4>
+                        <div class="mt-3 space-y-2 text-sm text-slate-300">
+                            <p><strong class="text-white">Inicio:</strong> Jue–Sáb, 21–23 de Mayo, 2026</p>
+                            <p><strong class="text-white">Cierre:</strong> Jue–Vie, 6–7 de Agosto, 2026 <span class="text-slate-500">(sesiones en vivo)</span></p>
+                            <p class="italic text-indigo-200 mt-2">Ideal para: Estudiantes que desean un comienzo más temprano y un inicio sólido para la formación de verano.</p>
+                        </div>
+                    </div>
+
+                    <!-- Opción B -->
+                    <div class="rounded-xl bg-slate-900/50 p-4 border border-slate-700/50">
+                        <h4 class="text-lg font-bold text-teal-400">Opción B — Intensivo de Verano (Unidad 2)</h4>
+                        <div class="mt-3 space-y-2 text-sm text-slate-300">
+                            <p><strong class="text-white">Inicio:</strong> Mar–Jue, 26–28 de Mayo, 2026</p>
+                            <p><strong class="text-white">Cierre:</strong> Mar–Mié, 11–12 de Agosto, 2026 <span class="text-slate-500">(sesiones en vivo)</span></p>
+                            <p class="italic text-indigo-200 mt-2">Ideal para: Estudiantes que desean un lanzamiento en vivo a principios de semana con un componente asincrónico flexible.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#contact" class="mt-6 inline-flex w-full items-center justify-center rounded-xl bg-white px-4 py-2.5 text-sm font-bold text-slate-900 transition hover:bg-indigo-50">
+                    Aplicar para Verano 2026
+                </a>
             </div>
-          </div>
-          <!-- Cohort Item -->
-          <div class="relative rounded-2xl border border-slate-800 bg-slate-800/50 p-6 transition hover:bg-slate-800">
-            <div class="flex flex-wrap items-center justify-between gap-4">
-              <div>
-                <h3 class="text-lg font-semibold text-white">Intensivo Invierno 25/26</h3>
-                <p class="text-sm text-indigo-300">17 Nov – 3 Feb • Lun/Mar tarde</p>
-                <p class="mt-2 text-sm text-slate-400">Nivel 2B liderazgo avanzado.</p>
-              </div>
-              <a href="#contact"
-                class="shrink-0 rounded-full bg-white px-4 py-2 text-sm font-semibold text-slate-900 transition hover:bg-indigo-100">
-                Unirse
-              </a>
-            </div>
-          </div>
         </div>
       </div>
     </section>
